@@ -75,7 +75,7 @@ function createRock(x) {
 
   rock.className = 'rock'
   rock.style.left = `${x}px`
-  if(color == 0) rock.style.background = 'tan';
+  
   if(color == 1) rock.style.background = 'blue';
   if(color == 2) rock.style.background = 'red';
   if(color == 3) rock.style.background = 'yellow';
