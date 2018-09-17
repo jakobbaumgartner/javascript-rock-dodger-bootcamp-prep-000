@@ -78,9 +78,10 @@ function createRock(x) {
   if(color == 0) rock.style.background = 'tan';
   if(color == 1) rock.style.background = 'blue';
   if(color == 2) rock.style.background = 'red';
-  if(color == 3) {rock.style.background = 'green'; 
+  if(color == 3) rock.style.background = 'yellow';
+  if(color == 4) {rock.style.background = 'green';
                   color = 0;}
-color++;
+  color++;
 
   // Hmmm, why would we have used `var` here?
   var top = 0;
@@ -270,7 +271,7 @@ function start() {
 
   }
 /*
-//additional interval for smoother game, however cant use it because tests want requestAnimationFrame ... 
+//additional interval for smoother game, however cant use it because tests want requestAnimationFrame ...
 
   gameSmooth = setInterval(function() {
     moveRock();
